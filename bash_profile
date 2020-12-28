@@ -13,3 +13,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11.0.6`; java -version"
